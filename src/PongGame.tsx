@@ -98,7 +98,8 @@ function PongGame() {
           -Math.sign(ball.dx) * Math.cos(bounceAngle) * Math.abs(ball.dx);
         const newDy = -Math.sin(bounceAngle) * Math.abs(ball.dy);
 
-        setBall({ ...ball, dx: newDx, dy: newDy });
+        const multiplier = Math.random() * 12;
+        setBall({ ...ball, dx: newDx + multiplier, dy: newDy });
       }
 
       if (
@@ -118,7 +119,8 @@ function PongGame() {
           -Math.sign(ball.dx) * Math.cos(bounceAngle) * Math.abs(ball.dx);
         const newDy = -Math.sin(bounceAngle) * Math.abs(ball.dy);
 
-        setBall({ ...ball, dx: newDx, dy: newDy });
+        const multiplier = Math.random() * 12;
+        setBall({ ...ball, dx: newDx + multiplier, dy: newDy });
       }
     }, 16);
 
