@@ -1,7 +1,11 @@
-import HandtrackingComponent from "./Handtracking";
+import PongGame from "./PongGame";
 
 function App() {
-  return <HandtrackingComponent />;
+  return (
+    <div className="w-full h-screen">
+      <PongGame />
+    </div>
+  );
 }
 
 export default App;
